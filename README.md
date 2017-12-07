@@ -1,4 +1,4 @@
-# temperature.bib.uni-ulm
+# Temperature measurement at the library of the University of Ulm
 4 Sensors reading out data including temperature and humidity
 
 ## Environment
