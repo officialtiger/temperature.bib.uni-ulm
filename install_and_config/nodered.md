@@ -1,44 +1,44 @@
-# Node-RED Installation und Konfiguration (Ubuntu/Debian)
+# Node-RED installation and configuration (Ubuntu/Debian)
 ## Installation
-### Step 1: Node.js herunterladen und installieren
+### Step 1: Download and install Node.js
 ```bash
 curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -
 
 sudo apt-get install -y nodejs
 ```
 
-### Step 2: Installieren
+### Step 2: Install Node-RED
 ```bash
 sudo npm install -g --unsafe-perm node-red
 ```
 
-### Step 3: Server starten
+### Step 3: Start server
 ```bash
 node-red
 ```
 
-##### Optional in Screen starten
+##### Optional: start in screen
 ```bash
 screen -d -m node-red
 ```
-## Konfiguration
+## Configuration
 ![Node-RED Flow Chart](../img/node-red.PNG)
-### TTN-Node anlegen
+### Add TTN-Node
 ![TTN-Node](../img/ttnnode.PNG)
 
-- TTN Erweiterung für Node-Red installieren
+- Install TTN-Addon for Node-RED
 ```bash
 cd $home /.node-red
 npm install node-red-contrib-ttn
 ```
-- AppID (Name von Application)
+- AppID (Name of application)
 - Region (eu, us, etc.)
-- Access Key (In TTN Console zu finden)
-### JavaScript Funktionen
+- Access Key (See TTN-Console)
+### JavaScript functions
 ![JavaScript Function](../img/jsfunction.PNG)
-- Beispiel zu Temperatur
-  * Daten mit Bitshift zurück in 16bit Zahl
-  * Umrechnung
+- Example for temperature
+  * Data with Bitshift back to unsigned 16int
+  * Convert back to actual value
 ```
 var message = {};
 var temp16;
@@ -50,12 +50,12 @@ return message;
 ### Influx Output Nodes
 ![Influx-Out-Node](../img/influx-out.PNG)
 
-- Influx Erweiterung für Node-Red installieren
+- Install Influx-Addon for Node-RED
 ```bash
 cd $home /.node-red
 npm install node-red-contrib-influxdb
 ```
-- Datenbank hinterlegen
-- Ausgabe in jeweiliges InfluxDB Measurement (Name eines Wertes) -> pressure, temp, humidity
+- Add databa
+- Output in particular InfluxDB measurement (Name of the value) -> pressure, temp, humidity
 
 
