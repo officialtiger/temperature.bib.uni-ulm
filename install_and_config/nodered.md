@@ -55,7 +55,7 @@ return message;
 cd $home /.node-red
 npm install node-red-contrib-influxdb
 ```
-- Add databa
+- Add database
 - Output in particular InfluxDB measurement (Name of the value) -> pressure, temp, humidity
 
 
