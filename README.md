@@ -19,3 +19,8 @@ Grafana is used as representation, which receives and displays the sensor data f
 - Optional:
   - air quality sensor
   - battery (fail-safe in case of power supply failure)
+
+  ## Presentation - Prezi [German]
+
+  https://prezi.com/view/cG6FL62uhYvEj2B41j7k/
+
