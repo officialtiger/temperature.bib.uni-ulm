@@ -35,8 +35,8 @@
 #include <hal/hal.h>
 //#include <SPI.h> USE THIS IF YOU USE SPI
 
-#include <Adafruit_BME280.h> //bme library einbinden
-#include <Adafruit_Sensor.h> //Zusatz zur bme library
+#include <Adafruit_BME280.h> //add bme libary
+#include <Adafruit_Sensor.h> //additional to bme libary
 #define SEALEVELPRESSURE_HPA (1013.25) //
 #define VBATPIN A7 
 
