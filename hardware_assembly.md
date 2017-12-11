@@ -1,9 +1,9 @@
-# Hardware Aufbau
+# Hardware assembly
 
-- vcc auf vcc (3.3V auf 3V)
-- gnd auf gnd  
-- scl auf scl  
-- sda auf sda
-- io1 auf pin 6
+- vcc to vcc (3.3V auf 3V)
+- gnd to gnd  
+- scl to scl  
+- sda to sda
+- io1 to pin 6
 
 ![Schaubild](/img/hardware.jpg)
